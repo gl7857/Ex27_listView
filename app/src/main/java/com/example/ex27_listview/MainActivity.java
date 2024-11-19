@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             double multiplier = Double.parseDouble(ratioOrDiffSt);
             intentSecondActivity.putExtra("multiplier", multiplier);
         }
+
         intentSecondActivity.putExtra("type", type);
         startActivityForResult(intentSecondActivity, REQUEST_CODE);
     }
