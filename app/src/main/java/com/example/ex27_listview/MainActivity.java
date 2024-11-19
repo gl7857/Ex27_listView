@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Please enter again, There is invalid input here", Toast.LENGTH_SHORT).show();
             return;
         }
+
         double firstTerm = Double.parseDouble(firstTermSt);
         intentSecondActivity.putExtra("firstTerm", firstTerm);
 
