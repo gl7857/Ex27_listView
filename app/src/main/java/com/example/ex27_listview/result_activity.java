@@ -17,7 +17,6 @@ public class result_activity extends AppCompatActivity implements AdapterView.On
     String[] terms = new String[20];
     Intent intentBack;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,6 @@ public class result_activity extends AppCompatActivity implements AdapterView.On
         sumOfTerms = findViewById(R.id.sumOfTerms);
         lVFirstTwenty = findViewById(R.id.listV);
         intentBack = getIntent();
-
 
         Intent intent = getIntent();
         type = intent.getBooleanExtra("type", false);
@@ -54,7 +52,6 @@ public class result_activity extends AppCompatActivity implements AdapterView.On
         lVFirstTwenty.setAdapter(adp);
         lVFirstTwenty.setOnItemClickListener(this);
     }
-
 
     public static String differentView(double term) {
         if (term % 1 == 0 && term < 10000 && term > -10000) {
@@ -90,7 +87,7 @@ public class result_activity extends AppCompatActivity implements AdapterView.On
 
         return String.format("%.3f * 10^%d", coefficient, exponent);
     }
-    
+
     public void generateArithmeticSeries() {
         double term;
         for (int i = 0; i < 20; i++) {
